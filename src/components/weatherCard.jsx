@@ -22,7 +22,7 @@ const WeatherCard = ({ data }) => {
           <span className="flex flex-col items-center xl:px-8">
             <img
               className="w-28"
-              src={`../../public/icons/weather_icons/${data.weather[0].icon}.png`}
+              src={`/icons/weather_icons/${data.weather[0].icon}.png`}
             ></img>
             <h1>{data.weather[0].description}</h1>
           </span>

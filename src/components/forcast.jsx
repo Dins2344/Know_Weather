@@ -33,7 +33,7 @@ const Forecast = ({ data }) => {
                   <div className=" h-10 bg-slate-100 rounded-lg my-2 flex justify-center items-center px-2 hover:cursor-pointer">
                     <img
                       className="w-8 h-8"
-                      src={`../../public/icons/weather_icons/${item.weather[0].icon}.png`}
+                      src={`/icons/weather_icons/${item.weather[0].icon}.png`}
                     ></img>
                     <label className="flex-1 font-semibold pl-2">
                       {forecastWeek[index]}
