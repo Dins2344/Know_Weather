@@ -23,8 +23,8 @@ const Forecast = ({ data }) => {
 
   return (
     <>
-      <div className="pt-5 mt-10 border-t-2 border-black">
-        <label className="text-xl font-bold mb-4 ">Forecast weather</label>
+      <div className="pt-5 mt-10 border-t-2 ">
+        <label className="text-xl font-bold mb-4 text-white">Daily forecast</label>
         <Accordion>
           {data.list.splice(0, 7).map((item, index) => (
             <AccordionItem key={index}>
@@ -49,7 +49,7 @@ const Forecast = ({ data }) => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <div className="grid grid-cols-2 px-3 gap-1">
+                <div className="grid grid-cols-2 px-3 gap-1 text-white">
                   <div className="flex justify-between pr-2">
                     <label className="font-semibold">Feels like:</label>
                     <label>{Math.round(item.main.feels_like)}°C</label>

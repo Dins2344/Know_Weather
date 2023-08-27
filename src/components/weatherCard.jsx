@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const WeatherCard = ({ data }) => {
   return (
-    <div className="flex flex-wrap w-full mt-8 rounded-md p-2 bg-slate-500">
+    <div className="flex flex-wrap w-full mt-8 rounded-md p-2 bg-transparent text-white ">
       <div className="flex flex-col w-full md:w-8/12 border-b-2 md:border-b-0 md:border-e-2 py-1">
         <div className="flex bg-slate-400 px-1 rounded-full w-max ">
           <svg
@@ -34,8 +34,8 @@ const WeatherCard = ({ data }) => {
         </div>
       </div>
       <div className="flex flex-col w-full  md:w-4/12">
-        <div className="flex flex-col py-2 px-2 lg:px-12 w-full">
-          <h1 className="mb-2">Details</h1>
+        <div className="flex flex-col py-2 px-2 lg:px-4 xl:px-9 w-full">
+          <h1 className="mb-2">More details</h1>
           <span className="flex justify-between">
             <p>Feels like:</p> <p>{data.main.feels_like}°C</p>
           </span>

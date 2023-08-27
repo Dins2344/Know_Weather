@@ -30,7 +30,7 @@ function App() {
 
   return (
     <>
-      <div className="container xl:px-72 lg:px-60  md:px-28 px-4">
+      <div className="container xl:px-72 lg:px-60  md:px-28 px-4 min-h-screen">
         <Search onSearchChange={searchChange} />
         {currentWeather && <WeatherCard data={currentWeather} />}
         {forecastWeather && <Forecast data={ forecastWeather}/>}

@@ -2,4 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root {
+  background-image: url("/background/app_background.jpg");
+  background-size: cover; /* Options: auto, cover, contain */
+  background-repeat: no-repeat; /* Options: repeat, repeat-x, repeat-y, no-repeat */
+  background-position: center center; /* Options: left top, center center, right bottom, etc. */
+  background-color: #f5f5f5;
+}
